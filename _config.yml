@@ -48,6 +48,7 @@ social:
     # - https://www.facebook.com/username
 
 # Site Verification Settings
+# Google and Bing verified via search console DNS verification method on 7.3.24
 webmaster_verifications:
   google: # fill in your Google verification code
   bing: # fill in your Bing verification code

@@ -1,19 +1,26 @@
 #  The contact options.
 
-- type: github
-  icon: "fab fa-github"
-
-- type: twitter
-  icon: "fa-brands fa-x-twitter"
+- type: socialaccounts
+  icon: 'fa-regular fa-id-badge'
+  url: '/about/'    # TODO: finalize URL once I build the /about/ page. Considering adding the exact heading tag.
+  tooltip: 'View my social accounts'
 
 - type: email
-  icon: "fas fa-envelope"
+  icon: 'fas fa-envelope'
   noblank: true # open link in current tab
+  tooltip: 'Send me an email'
 
 - type: rss
-  icon: "fas fa-rss"
-  noblank: true
+  icon: 'fas fa-rss'
+  tooltip: 'Subscribe to the RSS feed'
+
 # Uncomment and complete the url below to enable more contact options
+#
+# - type: github
+#   icon: 'fab fa-github'
+#
+# - type: twitter
+#   icon: 'fa-brands fa-x-twitter'
 #
 # - type: mastodon
 #   icon: 'fab fa-mastodon'   # icons powered by <https://fontawesome.com/>

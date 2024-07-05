@@ -44,7 +44,8 @@
 
   <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
     {% unless site.theme_mode %}
-      <button type="button" class="btn btn-link nav-link" aria-label="Switch Mode" id="mode-toggle">
+      <button type="button" class="btn btn-link nav-link" aria-label="Switch Mode" id="mode-toggle"
+              data-bs-toggle="tooltip" data-bs-placement="top" title="Switch between light and dark mode">
         <i class="fas fa-adjust"></i>
       </button>
 
@@ -74,6 +75,11 @@
         <a
           href="{{ url }}"
           aria-label="{{ entry.type }}"
+          {% if entry.tooltip %}
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            title="{{ entry.tooltip }}"
+          {% endif %}
           {% assign link_types = '' %}
 
           {% unless entry.noblank %}
